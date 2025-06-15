@@ -275,13 +275,13 @@
             <div class="about-main">
                 <div class="about-img">
                     <div class="bar-img">
-                        <img src="image/red_shoes1.png">
-                        <img src="image/red_shoes2.png">
-                        <img src="image/red_shoes3.png">
-                        <img src="image/red_shoes4.png">
+                        <img src="image/red_shoes1.png" onclick="functio(this)">
+                        <img src="image/red_shoes2.png" onclick="functio(this)">
+                        <img src="image/red_shoes3.png" onclick="functio(this)">
+                        <img src="image/red_shoes4.png" onclick="functio(this)">
                     </div>
                     <div class="big-img">
-                        <img src="image/red_shoes1.png">
+                        <img src="image/red_shoes1.png" id="imagebox">
                     </div>
                 </div>
                 <div class="about-txt">
@@ -302,6 +302,12 @@
             <div class="about-btn">
                 <a href="#">Shop Now</a>
             </div>
+            <script>
+                function functio(small){
+                    var full = document.getElementById("imagebox")
+                    full.src = small.src
+                }
+            </script>
         </div>
         <!-- Review -->
         <div class="review" id="Review">
