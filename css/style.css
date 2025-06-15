@@ -103,15 +103,15 @@ ul {
     }
 }
 
-.main .main-content .main-text h1 {
-    font-size: 90px;
+.main .main-content .main-text h1 span:not(.emoji) {
+    font-size: 65px;
     line-height: 70px;
-    font-family: pyxidium quick;
+    font-family: "Work Sans", sans-serif;
     background: linear-gradient(to right, var(--font-color),var(--main-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
-    top: 45px;
+    top: 70px;
     left: 5%;
 }
 
@@ -122,7 +122,7 @@ ul {
 }
 
 @media (max-width: 767px) {
-    .main .main-content .main-text > h1 {
+    .main .main-content .main-text h1 span {
         font-size: 60px;
         margin-top: 100px;
     }
