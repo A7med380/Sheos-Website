@@ -103,6 +103,12 @@ ul {
     }
 }
 
+@media (min-width: 1200px) {
+    .main .main-content .main-text {
+        margin-top: 180px;
+    }
+}
+
 .main .main-content .main-text h1 span:not(.emoji) {
     font-size: 65px;
     line-height: 70px;
@@ -356,6 +362,13 @@ ul {
     padding-bottom: var(--main-padding-bottom);
 }
 
+@media (max-width: 767px) {
+    .about {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
 .about h1 {
     display: flex;
     align-items: center;
@@ -490,6 +503,12 @@ ul {
     padding-bottom: var(--main-padding-bottom);
 }
 
+@media (max-width: 767px) {
+    .review {
+        padding-bottom: 0;
+    }
+}
+
 .review h1 {
     display: flex;
     justify-content: center;
@@ -598,6 +617,12 @@ ul {
     padding-bottom: var(--main-padding-bottom);
 }
 
+@media (max-width: 767px) {
+    .services {
+        padding-top: 0;
+    }
+}
+
 .services > h1 {
     font-size: 60px;
     text-transform: uppercase;
@@ -623,6 +648,12 @@ ul {
     justify-content: space-between;
     align-items: center;
     margin: 100px auto;
+}
+
+@media (max-width: 767px) {
+    .services .serv-up-box {
+        margin: 40px auto;
+    }
 }
 
 .services .serv-up-box .serv-card {
