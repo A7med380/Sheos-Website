@@ -204,15 +204,20 @@ ul {
 }
 
 .main .btn:hover i {
-    animation: move-left 1s linear infinite;
+    animation: move-left 1s infinite;
 }
 
 @keyframes move-left {
-    from {
-        transform: translateX(6px);
+    0% {
+        opacity: 0;
+        transform: translateX(-7px);
     }
-    to {
-        transform: translateX(-6px);
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(7px);
     }
 }
 
